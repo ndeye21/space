@@ -1,0 +1,43 @@
+body {
+    background-image: url("img/background-blue.png");
+    animation: 90s scroll infinite linear; }
+    body #acteur {
+      position: absolute;
+      top: 90%; }
+    body .lo {
+      display: inline-block; }
+    body #cadre_ennemie {
+      top: 1%; }
+  @keyframes scroll {
+    100% {
+      background-position: 0px -3000px; } }
+  #enemi {
+    position: relative;
+    left: 3%;
+    top: 0; }
+  
+  #enemie2 {
+    position: relative;
+    left: 5%;
+    top: 0; }
+  
+  #enemie3 {
+    position: relative;
+    left: 7%;
+    top: 0%; }
+  
+  .lo {
+    display: inline-block; }
+  
+  #cadre_ennemie {
+    position: absolute;
+    margin-top: 30px;
+    display: inline-block; }
+  
+  /*# sourceMappingURL=style.css.map */
+  #vie{
+      color: white;
+      margin-top: 0px;
+      margin-left: 300px;
+      font-weight: bold;
+  }

@@ -1,0 +1,42 @@
+<html>
+<head></head>
+</script>
+<body>
+<img name='image1' src='14.jpeg'>
+<img src='23.jpeg'>
+<img src='33.jpeg'>
+<script type='text/javascript'>
+
+var image = new Array();
+image[0] = new Array();
+image[0][0] = new Image();  image[0][0].src= 'img/enemy-black-1.png'
+image[0][1] = new Image();	image[0][1].src= 'img/enemy-black-1.png'
+image[0][2] = new Image();	image[0][2].src= 'img/enemy-black-1.png'
+image[0][3] = new Image();	image[0][3].src= 'img/enemy-black-1.png'
+image[1] = new Array();
+image[1][0] = new Image();  image[1][0].src= 'img/enemy-black-1.png'
+image[1][1] = new Image();	image[1][1].src= 'img/enemy-black-1.png'
+image[1][2] = new Image();	image[1][2].src= 'img/enemy-black-1.png'
+image[2] = new Array();
+image[2][0] = new Image();  image[2][0].src= 'img/enemy-black-1.png'
+image[2][1] = new Image();	image[2][1].src= 'img/enemy-black-1.png'
+image[2][2] = new Image();	image[2][2].src= 'img/enemy-black-1.png'
+var i = 0;    /* i est le nombre d'image dans la séquence */
+var img = 0; /* img = 3 est le nombre de lots d'image max */
+var nb_image = 2
+var compteur = new Array();
+for (var k=0 ; k <= nb_image ; k++)
+compteur[k]=0;
+function Animation()
+{
+if(img > nb_image) img = 0;
+if(compteur[img] > ((image[img].length)-1) ) { compteur[img] = 0;  }
+document.images[img].src = image[img][compteur[img]].src;
+compteur[img] = compteur[img] + 1;
+img = img + 1;
+window.setTimeout("Animation()",1000);
+}
+
+</script>
+</body>
+</html>

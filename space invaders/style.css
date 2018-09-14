@@ -1,0 +1,48 @@
+body {
+  background-image: url("../img/starry-sky-1654074_960_720.jpg");
+  animation: 90s scroll infinite linear; }
+  body #acteur {
+    position: absolute;
+    top: 90%; }
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px; } }
+
+/*# sourceMappingURL=style.css.map */
+body {
+  height: 100%;
+  overflow: hidden; 
+}
+
+body {
+  
+  font: 16px sans-serif;
+
+}
+
+#image
+{
+    margin-left: 250px;
+    
+}
+.image
+{
+    margin-left: 30px
+}
+.A
+{
+  position: relative;
+  bottom: 4em;
+}
+.B
+{
+  position: relative;
+  left: 3em;
+  bottom: 8em
+}
+.C
+{
+  position: relative;
+  left: 6em;
+  bottom: 4em;
+}
